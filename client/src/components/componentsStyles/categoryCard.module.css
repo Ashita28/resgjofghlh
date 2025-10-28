@@ -1,0 +1,27 @@
+.categoryContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    text-transform: capitalize;
+    border: 1.5px solid #616161;
+    border-radius: .5rem;
+
+    img{
+        margin-bottom: .3rem;
+        height: 1.3rem;
+    }
+
+    p{
+        font-size: 8.5px;
+    }
+}

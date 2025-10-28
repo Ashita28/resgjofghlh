@@ -1,0 +1,121 @@
+.card{
+    border: 2px solid #D9D9D9;
+    width: 23rem;
+    height: 19.5rem;
+    border-radius: 5px;
+    background-color: var(--bg-clr);
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid #D9D9D9;
+
+    h3{
+        font-size: medium;
+    }
+
+    p{
+        font-size: small;
+        margin-top: .5rem;
+    }
+}
+
+.dropDown{
+    padding: .5rem;
+    border-radius: 2rem;
+    border: 2px solid #D9D9D9;
+}
+
+.orderDetail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.detail{
+    border: 2px solid #D9D9D9;
+    width: 5.5rem;
+    height: 4.5rem;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p:first-of-type {
+        font-size: x-large;
+        color: #7B7E81;
+    }
+
+    p:last-of-type{
+        font-size: x-small;
+        color: #B9B8BE;
+    }
+}
+
+/* Layout around the chart + right panel */
+.visualData {
+  display: grid;
+  grid-template-columns: 120px 1fr; /* left donut fixed, right section fluid */
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Right section */
+.dataList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;        /* vertical spacing between rows */
+}
+
+/* A single row: label | percent | bar */
+.dataRow {
+  display: grid;
+  grid-template-columns: auto 64px 1fr; /* 👈 fixed % column ensures even spacing */
+  align-items: center;
+  column-gap: 16px;
+  /* remove debug border if present */
+  /* border: 2px solid green; */
+}
+
+/* Text styles */
+.label {
+  color: #7b7e81;
+  font-size: 0.9rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.percent {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: left; /* or center if you prefer */
+  white-space: nowrap;
+}
+
+/* Bar */
+.barTrack {
+  height: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+/* (Optional) tighten the card height slightly since we reduced the donut size */
+.card {
+  /* your existing styles */
+  height: 19.5rem; /* keep or tweak as you like */
+}

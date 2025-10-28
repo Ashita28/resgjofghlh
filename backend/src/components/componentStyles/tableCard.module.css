@@ -1,0 +1,52 @@
+.tableCard{
+    position: relative;;
+}
+
+.tableCardData{
+    border: 1px solid rgba(128, 128, 128, 0.676);
+    width: 7.3rem;
+    height: 6rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--bg-clr);
+}
+
+.delBtn{
+    position: absolute;
+    top: .4rem;
+    right: .5rem;
+    height: .75rem;
+    cursor: pointer;
+}
+
+.tableInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold;
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 2.5rem;
+    }
+}
+
+.chairInfo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: xx-small;
+    position: absolute;
+    bottom: .3rem;
+    right: .4rem;
+
+    img{
+        height: .65rem;
+    }
+}

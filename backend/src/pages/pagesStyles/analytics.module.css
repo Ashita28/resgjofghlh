@@ -1,0 +1,21 @@
+.analyticsPage{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.heading{
+    font-size:x-small;
+    padding-left: .2rem;
+
+    h1{
+        font-weight: normal;
+        color: var(----page-heading-clr);
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}

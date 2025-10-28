@@ -1,0 +1,30 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  border: 2px solid gray;
+  border-bottom: none;
+  width: 29.5vw;
+  height: 100vh;
+  margin: auto;
+  padding: 1rem;
+  border-top: none;
+}
+
+button, input{
+  outline: 0;
+  border: none;
+}
+
+/* Prevent background scroll when bottom sheet is open */
+.noScroll {
+  overflow: hidden;
+  height: 100dvh;
+}

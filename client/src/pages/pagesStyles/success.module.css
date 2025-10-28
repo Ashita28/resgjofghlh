@@ -1,0 +1,64 @@
+.successPage {
+  background-color: #20BF6D; /* green bg */
+  min-height: 100vh;
+  width: 100%;
+  border-radius: 12px;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* title+check centered; countdown bottom */
+  align-items: center;
+  padding: 24px 16px;
+  color: #fff;
+}
+
+/* Center block (title + check) */
+.centerWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh; /* visually center like the mock */
+  gap: 16px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Grey circular check with subtle pop */
+.checkWrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  animation: pop 280ms ease-out;
+}
+
+.checkIcon {
+  width: 28px;
+  height: 28px;
+  filter: invert(15%) sepia(5%) saturate(12%) hue-rotate(353deg) brightness(0.9); /* dark tick */
+}
+
+/* Bottom countdown */
+.countdown {
+  margin: 24px 0 8px;
+  font-size: 12px;
+  opacity: 0.95;
+}
+
+/* Gentle entrance animation (respects reduced motion) */
+@keyframes pop {
+  0% { transform: scale(0.85); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .checkWrap { animation: none; }
+}
